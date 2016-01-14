@@ -19,8 +19,15 @@ def page3(request):
 
 def current_datetime(request):
 	now=datetime.datetime.now()
-	fp=open('f:/big6vedio/templates/mytemplate.html')
+	fp=open('./templates/mytemplate.html')
 	t=template.Template(fp.read())
 	fp.close()
 	html=t.render(template.Context({'current_date':now}))
 	return HttpResponse(html)
+    
+def charts(request):
+    chart_file = open('./templates/Charts_Sep2015.html','r',encoding='utf-8')
+    chart_temp = template.Template(chart_file.read())
+    chart_file.close()
+    chart_html = chart_temp.render(template.Context())
+    return HttpResponse(chart_html)
