@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} 首页 {% endblock %}
+
+{% block body %}
+
+{% load staticfiles %}
+<link href="{% static 'css/indexbase.min.css' %}" rel="stylesheet" />
+
+<div class="header">
+
+</div>
+
+
+<div class="main-container">
+    {% block maincontainer %} {% endblock %}
+</div>
+
+<div class="footer">
+</div>
+{% endblock %}

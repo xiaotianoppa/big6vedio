@@ -3,10 +3,12 @@
 from django.http import HttpResponse
 import datetime
 from django import template
+from django.shortcuts import render
+from django.shortcuts import render_to_response
 
 
 def homepage(request):
-	return HttpResponse("<h1>This is our homepage.</h1>")
+    return render_to_response('index.html')
 
 def page1(request):
 	return HttpResponse("<h1>This is our page1.</h1>")
