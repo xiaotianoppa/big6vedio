@@ -13,6 +13,8 @@
 <body>
 	<h1 align="center"><b>官方商城九月份销售图表</b></h1>
 	<br/>
+    
+    {% load staticfiles %}    
 	<!-- 为Charts准备一个具备大小（宽高）的Dom -->
 	<!-- 商城总体交易情况Dom -->
 	<div style="width:1250px;margin: 20px auto;">
@@ -92,12 +94,12 @@
 
 
 	<!-- Charts单文件引入 -->
-	<script src="./dist/echarts.js"></script>
+	<script src="{% static 'js/dist/echarts.js' %}"></script>
 	<script type="text/javascript">
 		// 路径配置
 				require.config({
 						paths: {
-								echarts:'./dist'
+								echarts:"{% static 'js/dist' %}"
 						}
 				});
 				
