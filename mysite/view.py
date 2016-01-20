@@ -28,8 +28,13 @@ def current_datetime(request):
 	return HttpResponse(html)
 
 def charts(request):
+    return render_to_response('Charts_Sep2015.html')
+"""
+    Some unuseful code
+    
     chart_file = open('./video/templates/Charts_Sep2015.html','r',encoding='utf-8')
     chart_temp = template.Template(chart_file.read())
     chart_file.close()
     chart_html = chart_temp.render(template.Context())
     return HttpResponse(chart_html)
+"""
