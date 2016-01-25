@@ -10,8 +10,9 @@ from django.shortcuts import render_to_response
 def homepage(request):
     return render_to_response('index.html')
 
-def page1(request):
-	return HttpResponse("<h1>This is our page1.</h1>")
+def grade(request, grade):
+    s = str(grade)+"年级"
+    return render_to_response('grade.html',{'grade':s})
 
 def page2(request):
 	return HttpResponse("<h1>This is our page2.</h1>")

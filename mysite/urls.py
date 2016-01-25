@@ -17,12 +17,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from mysite.view import homepage,page1,page2,page3,current_datetime,charts
+from mysite.view import homepage,grade,page2,page3,current_datetime,charts
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',homepage),
-    url(r'^page1/$',page1),
+    url(r'^grade/(\d+)/$',grade),
     url(r'^page2/$',page2),
     url(r'^page3/$',page3),
     url(r'^current_datetime/$',current_datetime),
