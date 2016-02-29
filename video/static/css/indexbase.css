@@ -77,12 +77,6 @@ input[type="text"], input[type="password"] {
     border: 0;
 }
 
-.site-name>span{
-    display:none;
-    margin-top:6px;
-    font-size:65%
-}
-
 .main-footer{
     width: 1000px;
     margin: 0 auto;
@@ -108,7 +102,7 @@ input[type="text"], input[type="password"] {
 
 .main-footer .footer-title .title{
     color: #fff;
-    border-left: 5px solid #16a085;
+    border-left: 5px solid #85a737;
     padding-left: 15px;
 }
 
@@ -154,4 +148,22 @@ input[type="text"], input[type="password"] {
     width:30px;
     height:30px;
     line-height:30px
+}
+
+
+.nav-title{
+    color: #666;
+    border-left: 5px solid #85a737;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.nav-title .title-right{
+    float: right;
+    height: 30px;
+    width: 400px;
+    background: url("../img/title_right.png") repeat-x;
+    background-position:center 0;
+    -webkit-background-size:cover;
+
 }

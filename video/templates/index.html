@@ -1,6 +1,32 @@
 {% extends 'indexbase.html' %}
 
 {% block title %} 首页 {% endblock %}
+
+
+{% load staticfiles %}
 {% block maincontainer %}
-<div>吾儿们傻叉</div>
+<link href="{% static 'css/index.css' %}" rel="stylesheet" />
+<div class="main-instuction-div">
+    <div class="instruction-div">
+        <div class="nav-title">
+            <span class="title">What I Can Do For You</span>
+            <div class="title-right"></div>
+        </div>
+    </div>
+
+    <div class="instruction-div">
+        <div class="nav-title">
+            <span class="title">初中学习视频</span>
+            <div class="title-right"></div>
+        </div>
+    </div>
+
+    <div class="instruction-div">
+        <div class="nav-title">
+            <span class="title">高中学习视频</span>
+            <div class="title-right"></div>
+        </div>
+    </div>
+
+</div>
 {% endblock %}

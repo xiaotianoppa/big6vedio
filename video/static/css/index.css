@@ -1,0 +1,9 @@
+.main-instuction-div{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.instruction-div{
+    width: 100%;
+    margin: 20px auto;
+}
