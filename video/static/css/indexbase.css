@@ -1,33 +1,82 @@
 .header{
-    background:#222;
-    background-repeat:no-repeat;
+    background: url("../img/head_bg.png") repeat-x;
     background-position:center 0;
     -webkit-background-size:cover;
-    background-size:cover;padding:138px 0 0;
     text-align:center;
-    min-height:400px;
+    height: 70px;
+    min-height:70px;
     position:relative
 }
-.logoimg{
-    position:absolute;
-    left:1%;right:1%;bottom:-34px
+
+input[type="text"], input[type="password"] {
+    background: no-repeat 0 0 scroll #fff;
+    outline: medium;
 }
-.logotxt{
-    margin-bottom:30px;
-    border:0
+
+#menu-nav{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
 }
-.logotxt a{
-    font-weight:700;
-    color:#fff;
-    font-size:64px
+
+#menu-logo-nav{
+    float: left;
+    width: 90px;
+    position: relative;
 }
-.header h2{
-    color:#fff;
-    padding:0;
-    margin:0 0 45px;
-    font-weight:100;
-    font-size:34px
+#menu-logo-nav img{
+    width: 100%;
+    height: 70px;
 }
+
+#menu-select-nav{
+    float: right;
+}
+
+#menu-select-nav #menu-nav-ul{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position:relative
+}
+#menu-select-nav .menu-nav-li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    height: 100%;
+    padding-top: 22px;
+}
+#menu-select-nav .menu-nav-li a{
+    color: #e0e0e0;
+    font-size: 18px;
+    vertical-align: middle;
+}
+#menu-select-nav .menu-nav-li .icon{
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#menu-select-nav .menu-nav-li .search-div{
+    position: relative;
+    display: inline-block;
+}
+#menu-select-nav .menu-nav-li .search-div .search-icon{
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+#menu-select-nav .menu-nav-li .search-div .search-text-input{
+    background: #222;
+    padding: 5px 20px 5px 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: #f0f0f0;
+    border: 0;
+}
+
 .site-name>span{
     display:none;
     margin-top:6px;
@@ -35,37 +84,58 @@
 }
 
 .main-footer{
-    background:#202020;
-    padding:35px 0 0;
-    color:#959595
+    width: 1000px;
+    margin: 0 auto;
+    height: 332px;
+    background: url("../img/footer_bg.png") repeat-x;
+    border-radius: 15px;
+    color:#e0e0e0;
 }
-.main-footer .widget{
-    padding:0 30px
+.main-footer .container{
+    width: 980px;
+    height: 260px;
+    margin: 0 auto;
 }
-.main-footer .widget .title{
-    color:#fff;
-    border-bottom:1px solid #303030
+.main-footer .footer-title{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 1px #888 solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 8px auto;
 }
-.main-footer .widget .tag-cloud a{
-    border:1px solid #303030
+
+.main-footer .footer-title .title{
+    color: #fff;
+    border-left: 5px solid #16a085;
+    padding-left: 15px;
 }
-.main-footer .widget .tag-cloud a:hover{
-    border:1px solid #337ab7
+
+.main-footer .footer-title .title-right{
+    width: 60px;
+    float: right;
+    height: 20px;
 }
+.main-footer .footer-message{
+    margin-top: 15px;
+}
+.main-footer .footer-message p{
+    margin-top: 20px;
+}
+
 .copyright{
-    background:#111;
     font-size:13px;
     text-align:center;
-    color:#555;
-    padding-top:14px;
-    padding-bottom:20px;
-    border-top:1px solid #303030
+    color:#777;
+    margin-top: 10px;
+    padding-top: 15px;
 }
 .copyright span{
-    margin:0 .5em
+    margin:1em
 }
 .copyright a{
-    color:#555
+    color:#777
 }
 #back-to-top{
     position:fixed;

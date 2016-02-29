@@ -6,8 +6,42 @@
 
 {% load staticfiles %}
 
+<link href="{% static 'css/indexbase.css' %}" rel="stylesheet" />
 <div class="header">
-<a href="/" style="color: #a83c3a;font-size: 16px;">首页</a>{% block tags %}{% endblock %}
+    <div id="menu-nav">
+        <div id="menu-logo-nav">
+            <a href="/">
+                <img src="{% static 'img/logo_image.jpg' %}" >
+            </a>
+        </div>
+
+        <div id="menu-select-nav">
+            <ul id="menu-nav-ul">
+                <li class="menu-nav-li" title="首页">
+                    <a href="/" tabindex="-1">首页</a>
+                </li>
+                <li class="menu-nav-li" title="课程分类">
+                    <span class="icon">|</span>
+                    <a href="screens/2dd17364-5c07-4b39-881b-fa0d65d37315" tabindex="-1">课程分类</a>
+                </li>
+                <li class="menu-nav-li" title="注册登陆">
+                    <span class="icon">|</span>
+                    <a href="screens/aeb6f607-a319-43be-a8bf-0ed89be67797" tabindex="-1">注册登陆</a>
+                </li>
+                <li class="menu-nav-li" title="联系我们">
+                    <span class="icon">|</span>
+                    <a href="screens/a0131635-5bdf-4983-b50b-8781316d28fb" tabindex="-1">联系我们</a>
+                </li>
+                <li class="menu-nav-li" title="搜索">
+                    <span class="icon">|</span>
+                    <div class="search-div">
+                        <span class="search-icon glyphicon glyphicon-search"></span>
+                        <input type="text" class="search-text-input" placeholder="输入学科...">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </div>
 
@@ -16,6 +50,69 @@
     {% block maincontainer %} {% endblock %}
 </div>
 
-<div class="footer">
+<div class="main-footer">
+    <div class="container">
+        <div class="row" >
+            <div class="col-xs-6 col-sm-3">
+                <div class="footer-title">
+                    <span class="title">
+                        About Big6
+                    </span>
+                    <img class="title-right" src="{% static 'img/title_right.png' %}" >
+                </div>
+                <div class="footer-message">
+                    <p>Big6革命委员会（简称“Big6”）</p>
+                    <p>民主联盟性质</p>
+                    <p>纯真兄弟情谊</p>
+                    <p>2010年6月8日成立</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="footer-title">
+                        <span class="title">
+                        Big6学习网站
+                    </span>
+                    <img class="title-right" src="{% static 'img/title_right.png' %}" >
+                </div>
+                <div class="footer-message">
+                    <p>受众范围：初中到高中</p>
+                    <p>建立学习兴趣，树立学习信心</p>
+                    <p>传授学习方法、夯实学习基础</p>
+                    <p>提升做题速度、掌握解题技巧</p>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3">
+                <div class="footer-title">
+                         <span class="title">
+                        平台特色
+                    </span>
+                    <img class="title-right" src="{% static 'img/title_right.png' %}" >
+                </div>
+                <div class="footer-message">
+                    <p>All free</p>
+                    <p>名校导师</p>
+                    <p>随时答疑</p>
+                    <p>以学生为中心</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="footer-title">
+                         <span class="title">
+                        关注我们
+                    </span>
+                    <img class="title-right" src="{% static 'img/title_right.png' %}" >
+                </div>
+                <div class="footer-message">
+                    <img class="wei-chat" src="{% static 'img/wechat.jpg' %}" style="width: 120px;" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <a href="http://www.miitbeian.gov.cn/" target="_blank">© 2016-2016 by Kingdom</a>
+        <span>创始人：乐小豆、刘皇叔、罗小凤、刚哥（按年龄排序）</span>
+    </div>
 </div>
 {% endblock %}
