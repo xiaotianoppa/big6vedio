@@ -1,0 +1,46 @@
+.contact-me-container{
+    width: 1000px;
+    margin: 30px auto;
+}
+.contact-me-container .nav-title{
+    margin: 30px auto;
+}
+.contact-me-container .row{
+    margin: 0;
+    padding: 0;
+}
+.contact-me-container .left-nav{
+    position: relative;
+    padding: 0;
+    text-align: left;
+}
+.contact-me-container .left-nav img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #e0e0e0;
+}
+.contact-me-container .right-nav{
+    position: relative;
+    padding-left: 50px;
+}
+
+.contact-me-container .right-nav .input-div{
+    margin-bottom: 20px;
+}
+.contact-me-container .right-nav input{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    width: 300px;
+    border: 1px solid #85a737;
+    font-size: 16px;
+    color: #85a737;
+}
+.contact-me-container .right-nav .my-idea{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+.submit-btn{
+    padding: 8px 20px;
+}

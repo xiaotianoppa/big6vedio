@@ -1,0 +1,41 @@
+{% extends 'indexbase.html' %}
+
+{% block title %} 联系我们 {% endblock %}
+
+
+{% load staticfiles %}
+{% block maincontainer %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet" />
+<link href="{% static 'css/contact.css' %}" rel="stylesheet" />
+<div class="contact-me-container">
+    <div class="nav-title">
+        <span class="title">Contact Me</span>
+        <div class="title-right"></div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-6 col-sm-3 left-nav">
+            <div class="">
+                <img src="https://img.alicdn.com/imgextra/i4/649612466/TB22oKWkVXXXXbqXXXXXXXXXXXX_!!649612466.png" />
+                <span>请叫我刘皇叔，我爹是刚哥</span>
+            </div>
+        </div>
+        <div class="col-xs-18 col-sm-9 right-nav">
+            <div class="form-container">
+                <div class="input-div">
+                    <input type="text" class="username" name="username" size="30" placeholder="用户名">
+                </div>
+                <div class="input-div">
+                    <input type="text" class="email" name="username" size="30" placeholder="邮箱">
+                </div>
+                <div class="input-div">
+                    <textarea class="my-idea" placeholder="建议"></textarea>
+                </div>
+                <div class="submit-div">
+                    <span class="more-btn submit-btn">Submit</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
