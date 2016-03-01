@@ -164,6 +164,12 @@ input[type="text"], input[type="password"] {
     width: 400px;
     background: url("../img/title_right.png") repeat-x;
     background-position:center 0;
-    -webkit-background-size:cover;
 
+}
+.more-btn{
+    background: url("../img/more_btn.png");
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+    cursor: pointer;
 }

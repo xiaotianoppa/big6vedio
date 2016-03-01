@@ -1,0 +1,106 @@
+.login-register-container{
+    width: 1000px;
+    margin: 30px auto;
+}
+.login-register-container .row{
+    margin: 0;
+}
+.login-register-container .left-nav{
+    padding: 0;
+}
+.login-register-container .left-nav .select-nav{
+    background: #f0f0f0;
+    margin-right: 20px;
+    padding: 30px 30px;
+}
+.login-register-container .left-nav ul li{
+    list-style: none;
+    font-size: 16px;
+}
+.login-register-container .right-nav{
+    padding: 0;
+}
+.login-register-container .login-container{
+    background: #f0f0f0;
+    margin-left: 10px;
+    padding: 20px 30px 30px 30px;
+}
+.login-register-container .login-container .login-title{
+    text-align: center;
+    font-size: 28px;
+    color: #27b049;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+.login-div{
+    margin: 20px 20px 30px 0;
+}
+.login-form{
+    margin-top: 30px;
+}
+.login-form .input-div{
+    margin-bottom: 20px;
+    position: relative;
+}
+.login-form input{
+    padding-left: 35px;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #27b049;
+    font-size: 18px;
+    color: #27b049;
+}
+.login-form .login-icon{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #27b049;
+}
+.login-btn{
+    background: #27b049;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.other-type{
+    margin-top: 0px;
+    margin-left: 30px;
+    border-left: 2px solid #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.other-type .other-type-title{
+    color: #27b049;
+    font-size: 18px;
+}
+.other-type-login{
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 20px;
+}
+.other-type-login ul li{
+    list-style: none;
+    display: inline-block;
+}
+.other-type-login .login-icon{
+    display: inline-block;
+    width: 44px;
+    height: 43px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.other-type .icon_sina{
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-sina_9cae1d9.png);
+}
+.other-type .icon_tencent {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-tecent_5870bd4.png);
+}
+.other-type .icon_wechat {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-wechat_12ea62f.png);
+}

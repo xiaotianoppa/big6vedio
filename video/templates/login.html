@@ -1,0 +1,47 @@
+{% extends 'loginbase.html' %}
+
+{% block title %} 用户登录 {% endblock %}
+
+{% block logintitle %}手机/邮箱登录{% endblock %}
+{% block logincontainer %}
+<div class="login-div">
+    <div class="row" >
+        <div class="col-xs-14 col-sm-6">
+            <div class="login-form">
+                <div class="input-div">
+                    <input type="text" class="username" name="username" size="30" placeholder="请输入用户名">
+                    <span class="login-icon glyphicon glyphicon-user"></span>
+                </div>
+                <div class="input-div">
+                    <input type="password" class="password" name="password" size="30" placeholder="请输入密码">
+                    <span class="login-icon glyphicon glyphicon-lock"></span>
+                </div>
+                <div>
+                    <span class="op-btn login-btn">登录</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-6">
+            <div class="other-type">
+                <div class="other-type-title">
+                    <span>其他方式登录</span>
+                </div>
+                <div class="other-type-login">
+                    <ul>
+                        <li>
+                            <a href="#" title="使用新浪微博帐号登录" class="login-icon icon_sina" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="使用腾讯QQ帐号登录" class="login-icon icon_tencent" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="使用微信账号帐号登录" class="login-icon icon_wechat" target="_blank"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -10,6 +10,12 @@ from django.shortcuts import render_to_response
 def homepage(request):
     return render_to_response('index.html')
 
+def login(request):
+    return render_to_response('login.html')
+
+def register(request):
+    return render_to_response('register.html')
+
 def grade(request, grade):
     s = str(grade)+"年级"
     return render_to_response('grade.html',{'grade':s})
