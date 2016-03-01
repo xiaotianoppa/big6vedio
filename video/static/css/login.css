@@ -52,8 +52,8 @@
 }
 .login-form .login-icon{
     position: absolute;
-    margin-left: 10px;
-    margin-top: 12px;
+    left: 10px;
+    top: 12px;
     font-size: 16px;
     color: #27b049;
 }
