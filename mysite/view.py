@@ -15,8 +15,12 @@ def login(request):
 
 def register(request):
     return render_to_response('register.html')
+
 def contact(request):
     return render_to_response('contactme.html')
+
+def category(request):
+    return render_to_response('category.html')
 
 def grade(request, grade):
     s = str(grade)+"年级"

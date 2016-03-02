@@ -1,0 +1,90 @@
+{% extends 'indexbase.html' %}
+
+{% block title %} 课程分类 {% endblock %}
+
+
+{% load staticfiles %}
+{% block maincontainer %}
+<link href="{% static 'css/category.css' %}" rel="stylesheet" />
+<div class="lesson-category-container">
+    <div class="mid-school-div">
+        <div class="nav-title">
+            <span class="title">初中</span>
+        </div>
+        <div class="row" >
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">七年级</a></li>
+                <li><a href="#">八年级</a></li>
+                <li><a href="#">九年级</a></li>
+                <li><a href="#">中考</a></li>
+            </ul>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">数学</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">物理</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">化学</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="high-school-div" style="margin-top: 50px;">
+        <div class="nav-title">
+            <span class="title">高中</span>
+        </div>
+        <div class="row" >
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">高一</a></li>
+                <li><a href="#">高二</a></li>
+                <li><a href="#">高三</a></li>
+                <li><a href="#">高考</a></li>
+            </ul>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">数学</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">物理</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+                <div>
+                    <span class="select-type-btn">化学</span>
+                </div>
+                <div>
+                    <span class="look-btn">观看</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
