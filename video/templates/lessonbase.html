@@ -1,0 +1,78 @@
+{% extends 'indexbase.html' %}
+
+{% block title %} 课程 {% endblock %}
+
+{% load staticfiles %}
+{% block maincontainer %}
+<link href="{% static 'css/lesson.css' %}" rel="stylesheet" />
+<div class="lesson-main-container">
+    <div class="row" >
+        <div class="col-xs-16 col-sm-9 left-nav">
+            <div class="lesson-body-div">
+                {% block lessonbody %}{% endblock %}
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-3 right-nav">
+            <div class="about-cource-div">
+                <div class="nav-title">
+                    <span class="title">About 分式乘除</span>
+                    <div class="title-right"></div>
+                </div>
+                <div class="about-info-div">
+                    <p>一些简介</p>
+                </div>
+            </div>
+            <div class="relative-lesson-div">
+                <div class="nav-title">
+                    <span class="title">相关视频</span>
+                    <div class="title-right"></div>
+                </div>
+                <div class="relative-vedio-div">
+                    <div class="row-vedio">
+                        <img src="https://img.alicdn.com/imgextra/i3/649612466/TB2bPGGkVXXXXcSXXXXXXXXXXXX_!!649612466.gif" style="width: 100%;
+                    height: 100%;" />
+                    </div>
+                    <div class="row-title">
+                        <span class="title">分式化简</span>
+                    </div>
+                    <div class="operation-div">
+                        <a>
+                            web
+                        </a><span>|</span>
+                        <a>
+                            audio
+                        </a><span>|</span>
+                        <a>
+                            video
+                        </a>
+                        <img style="margin-left: 20px;" src="{% static 'img/message.png' %}">
+                        <span>5</span>
+                    </div>
+                </div>
+                <div class="relative-vedio-div">
+                    <div class="row-vedio">
+                        <img src="https://img.alicdn.com/imgextra/i3/649612466/TB2bPGGkVXXXXcSXXXXXXXXXXXX_!!649612466.gif" style="width: 100%;
+                    height: 100%;" />
+                    </div>
+                    <div class="row-title">
+                        <span class="title">整式除法</span>
+                    </div>
+                    <div class="operation-div">
+                        <a>
+                            web
+                        </a><span>|</span>
+                        <a>
+                            audio
+                        </a><span>|</span>
+                        <a>
+                            video
+                        </a>
+                        <img style="margin-left: 20px;" src="{% static 'img/message.png' %}">
+                        <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

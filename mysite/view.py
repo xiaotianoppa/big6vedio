@@ -22,6 +22,9 @@ def contact(request):
 def category(request):
     return render_to_response('category.html')
 
+def lesson(request, grade, cource):
+    return render_to_response('lesson.html',{'grade':grade, 'cource': cource})
+
 def grade(request, grade):
     s = str(grade)+"年级"
     return render_to_response('grade.html',{'grade':s})

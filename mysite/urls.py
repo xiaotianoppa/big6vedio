@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from mysite.view import homepage,login,register,category, contact, grade,page2,page3,current_datetime,charts
+from mysite.view import homepage,login,register,category, contact, lesson, grade,page2,page3,current_datetime,charts
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^category/',category),
     url(r'^register/',register),
     url(r'^contact/',contact),
+    url(r'^lesson/(\w+)/(\d+)/$',lesson),
     url(r'^grade/(\d+)/$',grade),
     url(r'^page2/$',page2),
     url(r'^page3/$',page3),

@@ -1,0 +1,63 @@
+.lesson-main-container{
+    width: 1000px;
+    margin: 30px auto;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+.lesson-main-container{
+    margin-bottom: 20px;
+}
+.lesson-main-container .row{
+    width: 1000px;
+}
+.lesson-main-container .nav-title{
+    position: relative;
+    font-size: 14px;
+    color: #111;
+
+}
+.lesson-main-container .nav-title .title-right{
+    float: right;
+    width: 137px;
+    background: url("../img/title_right.png") no-repeat;
+}
+.about-cource-div{
+    margin-bottom: 30px;
+}
+.about-info-div{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+.relative-lesson-div{
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+.relative-vedio-div .row-vedio{
+    width: 220px;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    margin: 10px 0 5px 0;
+}
+
+.lesson-div .row{
+    width: 100%;
+    margin: 0;
+}
+.lesson-div .tag-div .date-tag{
+    width: 72px;
+    margin: 0 auto;
+    height: 102px;
+    background: url("../img/date_tip.png") no-repeat;
+    border-radius: 8px;
+    color:#fff;
+    text-align: center;
+}
+.lesson-div .tag-div .date-tag .month-date-time{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 100px;
+}
