@@ -12,6 +12,9 @@
 .lesson-main-container .row{
     width: 1000px;
 }
+.lesson-main-container .row .left-nav{
+    padding: 0;
+}
 .lesson-main-container .nav-title{
     position: relative;
     font-size: 14px;
@@ -20,7 +23,7 @@
 }
 .lesson-main-container .nav-title .title-right{
     float: right;
-    width: 137px;
+    width: 60px;
     background: url("../img/title_right.png") no-repeat;
 }
 .about-cource-div{
@@ -48,16 +51,25 @@
 }
 .lesson-div .tag-div .date-tag{
     width: 72px;
-    margin: 0 auto;
     height: 102px;
     background: url("../img/date_tip.png") no-repeat;
     border-radius: 8px;
     color:#fff;
     text-align: center;
+    padding-top: 12px;
 }
 .lesson-div .tag-div .date-tag .month-date-time{
-    display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
-    margin-top: 100px;
+}
+.lesson-div .tag-div .date-tag .play-btn{
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.lesson-div .tag-div .date-tag .play-btn:hover{
+    color: #e0e0e0;
+}
+a{
+    cursor: pointer;
 }
