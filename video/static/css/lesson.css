@@ -12,8 +12,10 @@
 .lesson-main-container .row{
     width: 1000px;
 }
-.lesson-main-container .row .left-nav{
+.lesson-main-container .row .left-nav,
+.lesson-main-container .row .right-nav{
     padding: 0;
+
 }
 .lesson-main-container .nav-title{
     position: relative;
@@ -70,6 +72,28 @@
 .lesson-div .tag-div .date-tag .play-btn:hover{
     color: #e0e0e0;
 }
+.lesson-div .tag-div .tags-select{
+    margin-top: 15px;
+}
+.tags-select .tags-title{
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.tags-select .tags-select-div{
+    font-size: 12px;
+    color: #85a737;
+}
+.tags-select .tags-select-div a{
+    color: #85a737;
+}
 a{
     cursor: pointer;
+}
+.vedio-div{
+    width: 450px;
+}
+.vedio-div img{
+    width: 550px;
+    height: 350px;
 }
