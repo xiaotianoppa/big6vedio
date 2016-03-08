@@ -12,6 +12,9 @@ input[type="text"], input[type="password"] {
     background: no-repeat 0 0 scroll #fff;
     outline: medium;
 }
+a{
+    cursor: pointer;
+}
 
 #menu-nav{
     height: 100%;

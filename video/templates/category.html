@@ -87,4 +87,12 @@
     </div>
 
 </div>
+<script type="text/javascript">
+    $('.nav-justified a').unbind().hover(function(){
+        $(this).parent("li").parent("ul").find("li").removeClass("active");
+        $(this).parent("li").addClass("active");
+    },function(){
+
+    });
+</script>
 {% endblock %}
